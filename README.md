@@ -18,32 +18,32 @@ In the project root directory run:
 
 The web service server will be start at port 9999.
 
-#Test APIs
-##Create:
+# Test APIs
+## Create:
  Send a POST request to http://localhost:9999/shops with data as
 
   name=NAME, address=ADDRESS, lat=LATITUTE, lng=LONGTITUTE
 
   on success, return the id for the record. On failure for name existing, return 409
 
-##Get by id:
+## Get by id:
   Send a GET request to http://localhost:9999/shops/id/ID, ID whould be an integer
 
   on success, return the found record. On failure for id not existing, return 404
 
-##Get by name:
+## Get by name:
   Send a GET request to http://localhost:9999/shops/name/NAME
 
   on success, return the found record. On failure for name not existing, return 404
 
-##Update:
+## Update:
   Send a PUT request to http://localhost:9999/shops/id/ID, with some of the following data set:
 
   name=NAME, address=ADDRESS, lat=LATITUTE, lng=LONGTITUTE
 
   on success, return the updated record. On failure, return 404
 
-##Delete:
+## Delete:
   Send a DELETE request to http://localhost:9999/shops/id/ID
 
 ## Find nearest coffee shop:
